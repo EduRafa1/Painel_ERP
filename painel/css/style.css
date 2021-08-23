@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aclonica", sans-serif;
+  color: #BABCB9; }
+
+*::-webkit-scrollbar {
+  width: 9px; }
+
+*::-webkit-scrollbar-track {
+  background: #cedaed; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #23282d;
+  border: 2px solid #ccc;
+  border-radius: 7px; }
+
+html, body {
+  height: 100%;
+  overflow-x: hidden; }
+
+.clear {
+  clear: both; }
+
+.w100 {
+  width: 100%; }
+
+.w90 {
+  width: 90%; }
+
+.w85 {
+  width: 85%; }
+
+.w80 {
+  width: 80%; }
+
+.w75 {
+  width: 75%; }
+
+.w50 {
+  width: 50%; }
+
+.w40 {
+  width: 40%; }
+
+.w33 {
+  width: 33.3%; }
+
+.w30 {
+  width: 30%; }
+
+.w25 {
+  width: 25%; }
+
+.w20 {
+  width: 20%; }
+
+.w15 {
+  width: 15%; }
+
+.w10 {
+  width: 10%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2%; }
+
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: #23282d; }
+  header .box-header {
+    width: 100%;
+    padding: 8px 0.3%; }
+    header .box-header li {
+      width: 50%;
+      text-align: right;
+      list-style-type: none; }
+      header .box-header li p {
+        font-size: 14px; }
+      header .box-header li i {
+        margin-left: 6px;
+        background-color: #333;
+        padding: 4px 6px;
+        border: 1px solid #babcbe; }
+    header .box-header div {
+      width: 50%;
+      margin-top: 3px; }
+      header .box-header div a {
+        text-decoration: none;
+        padding: 12px 10px;
+        font-size: 14px; }
+      header .box-header div a:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #ddd;
+        transition: 0.3s; }
+    header .box-header .header-menu-mobile {
+      width: 100%;
+      display: none; }
+
+section.menu::-webkit-scrollbar {
+  width: 0px; }
+
+section.menu {
+  position: fixed;
+  top: 40px;
+  z-index: 2;
+  width: 240px;
+  height: calc(100% - 40px);
+  background-color: #23282d;
+  overflow-x: hidden;
+  overflow-y: visible; }
+  section.menu .container-menu {
+    width: 700px; }
+  section.menu .box-painel {
+    width: 100%;
+    background-color: #32373c; }
+    section.menu .box-painel .box-menu:hover {
+      background-color: #454545;
+      cursor: pointer; }
+      section.menu .box-painel .box-menu:hover p {
+        color: white; }
+      section.menu .box-painel .box-menu:hover a {
+        color: white; }
+      section.menu .box-painel .box-menu:hover i {
+        color: white; }
+    section.menu .box-painel .box-menu {
+      position: relative;
+      padding: 17px 0;
+      padding-left: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+      section.menu .box-painel .box-menu span {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        font-size: 12px;
+        transform: translateY(-50%); }
+        section.menu .box-painel .box-menu span i {
+          font-size: 15px; }
+      section.menu .box-painel .box-menu p {
+        font-weight: bold;
+        cursor: pointer; }
+      section.menu .box-painel .box-menu a {
+        text-decoration: none;
+        font-weight: bold;
+        display: block; }
+      section.menu .box-painel .box-menu i {
+        padding-right: 18px;
+        font-size: 18px; }
+    section.menu .box-painel .box-menu-wraper {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.3) !important; }
+      section.menu .box-painel .box-menu-wraper a {
+        font-weight: normal;
+        font-size: 14px; }
+      section.menu .box-painel .box-menu-wraper i {
+        font-size: 14px; }
+    section.menu .box-painel .esconder-menu {
+      background-color: #23282d;
+      padding: 20px 15px;
+      cursor: pointer; }
+      section.menu .box-painel .esconder-menu p {
+        color: #00b9eb; }
+      section.menu .box-painel .esconder-menu i {
+        color: #00b9eb;
+        padding-right: 18px; }
+    section.menu .box-painel .esconder-menu:hover {
+      background-color: #373969;
+      transition: 0.4s; }
+    section.menu .box-painel .menu-minificado {
+      padding: 10px 0;
+      background-color: #16191c;
+      padding-left: 14px;
+      cursor: pointer;
+      width: 240px; }
+      section.menu .box-painel .menu-minificado i {
+        padding-right: 18px;
+        font-size: 18px; }
+  section.menu .selected {
+    color: white; }
+
+.abrir-menu {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  background-color: #292828;
+  padding: 8px 3px;
+  padding-left: 13px;
+  cursor: pointer; }
+  .abrir-menu i {
+    color: #00b9eb;
+    font-size: 19px;
+    padding-right: 15px; }
+
+.abrir-menu:hover p {
+  color: #dcdedc;
+  transition: 0.5s; }
+.abrir-menu:hover i {
+  color: #dcdedc;
+  transition: 0.5s; }
+
+main {
+  width: calc(100% - 240px);
+  height: calc(100% - 40px);
+  margin-top: 40px;
+  padding: 0px;
+  overflow-y: auto;
+  background-color: #dedede;
+  float: right;
+  color: black; }
+  main .main-conteudo {
+    width: 100%;
+    padding: 10px; }
+    main .main-conteudo .main-title {
+      width: 100%;
+      padding-bottom: 30px; }
+      main .main-conteudo .main-title h1 {
+        color: #666;
+        font-weight: normal; }
+      main .main-conteudo .main-title i {
+        color: #666; }
+    main .main-conteudo .main-box {
+      width: 100%;
+      background-color: #fafafa;
+      padding: 10px; }
+      main .main-conteudo .main-box span {
+        color: #666; }
+      main .main-conteudo .main-box input[type=text] {
+        margin: 15px 0;
+        padding: 15px 10px;
+        border: 1px solid #ccc;
+        color: #666; }
+      main .main-conteudo .main-box input[type=text]:focus {
+        outline: 0; }
+      main .main-conteudo .main-box .search {
+        position: relative; }
+        main .main-conteudo .main-box .search i {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer; }
+        main .main-conteudo .main-box .search i:hover {
+          color: #666; }
+      main .main-conteudo .main-box .options {
+        width: 100%;
+        margin-top: 50px; }
+        main .main-conteudo .main-box .options .options-box {
+          cursor: pointer;
+          margin: 0 5px;
+          background-color: #32373C;
+          display: inline-block;
+          border-radius: 10px; }
+          main .main-conteudo .main-box .options .options-box a {
+            display: inline-block;
+            padding: 10px 45px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold; }
+        main .main-conteudo .main-box .options .options-box:nth-of-type(1) {
+          margin-left: 0; }
+        main .main-conteudo .main-box .options .options-box:hover {
+          background-color: #181b1f; }
+  main .main-fixed {
+    display: none;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+    main .main-fixed .box-fixed {
+      margin: 0 1%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      max-width: 600px;
+      width: 100%;
+      border: 1px solid #23282d; }
+      main .main-fixed .box-fixed .title-fixed {
+        background-color: #23282d;
+        padding: 10px; }
+        main .main-fixed .box-fixed .title-fixed h2 {
+          font-size: 18px;
+          font-weight: normal;
+          text-transform: uppercase; }
+      main .main-fixed .box-fixed .conteudo-fixed {
+        padding: 20px 10px 20px 10px;
+        max-height: 350px;
+        overflow-y: auto; }
+        main .main-fixed .box-fixed .conteudo-fixed .container-input {
+          width: 100%;
+          padding: 0 5px;
+          margin: 5px auto; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input label {
+            color: #666; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input input {
+            border: 1px solid #666;
+            color: #666; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input input {
+            margin-top: 5px;
+            width: 100%;
+            padding: 5px 7px; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input input:focus {
+            outline: 0; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input input[type=date] {
+            border: 0;
+            border-bottom: 1px solid #666;
+            margin-top: 0;
+            border-right: 1px solid #666; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input button {
+            width: 100%;
+            margin-top: 22.5px;
+            padding: 6px 0;
+            border: 0;
+            background-color: #23282d;
+            cursor: pointer; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input button:hover {
+            background-color: #121212; }
+            main .main-fixed .box-fixed .conteudo-fixed .container-input button:hover i {
+              color: white; }
+      main .main-fixed .box-fixed .footer-fixed {
+        width: 100%;
+        background-color: #23282d;
+        padding: 10px 10px; }
+        main .main-fixed .box-fixed .footer-fixed .footer-button-fixed {
+          background-color: #181b1f;
+          border: 1px solid #666;
+          border-radius: 10px;
+          display: inline-block;
+          padding: 7px 15px;
+          cursor: pointer;
+          margin: 0 3px; }
+          main .main-fixed .box-fixed .footer-fixed .footer-button-fixed input[type=submit] {
+            background-color: #181b1f;
+            border: 0;
+            font-size: 15px;
+            cursor: pointer;
+            padding-left: 5px; }
+          main .main-fixed .box-fixed .footer-fixed .footer-button-fixed span {
+            font-weight: normal;
+            margin-left: 5px; }
+        main .main-fixed .box-fixed .footer-fixed .footer-button-fixed:hover {
+          background-color: black; }
+          main .main-fixed .box-fixed .footer-fixed .footer-button-fixed:hover i {
+            color: white;
+            transition: 0.4s; }
+          main .main-fixed .box-fixed .footer-fixed .footer-button-fixed:hover input {
+            color: white;
+            background-color: black;
+            transition: 0.4s; }
+          main .main-fixed .box-fixed .footer-fixed .footer-button-fixed:hover span {
+            color: white;
+            transition: 0.4s; }
+  main .box-fixed2 {
+    max-width: 980px !important; }
+
+@media screen and (max-width: 775px) {
+  main .main-title h1 {
+    font-size: 20px; }
+  main .options-box {
+    width: 100%;
+    margin: 5px 0 !important;
+    text-align: center; }
+    main .options-box a {
+      width: 100% !important;
+      padding: 15px 0 !important; } }
+@media screen and (max-width: 600px) {
+  .w15 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w20 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w30 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w33 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w40 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w75 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w10 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w25 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w90 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w50 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .container-input {
+    float: none !important;
+    margin: 0 auto !important; }
+    .container-input button {
+      margin-top: 5px !important;
+      padding: 8px 0; }
+
+  header {
+    margin-top: 0;
+    padding-top: 0; }
+    header .box-header {
+      padding-top: 5px; }
+    header p.desktop {
+      display: none; }
+    header a.desktop {
+      display: none; }
+    header .header-menu-mobile {
+      display: inline-block !important; }
+
+  .main-fixed h2 {
+    font-size: 14px !important; }
+  .main-fixed label {
+    font-size: 13px !important; }
+  .main-fixed input[type=date] {
+    border: 1px solid #666 !important; } }
+@media screen and (max-width: 400px) {
+  .footer-button-fixed {
+    margin: 5px 0 !important; } }
+
+/*# sourceMappingURL=style.css.map */

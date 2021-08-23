@@ -1,0 +1,153 @@
+$colorBG: #23282d
+$corPadrao: #babcbe
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Aclonica', sans-serif
+	color: white
+html,body
+	height: 100%
+.clear
+	clear: both
+.w100
+	width: 100%
+.w90
+	width: 90%
+.w50
+	width: 50%
+.w33
+	width: 33.3%
+.w25
+	width: 25%
+.w15
+	width: 15%
+.left
+	float: left
+.right
+	float: right
+//Sessao de Login do ERP
+main
+	height: 100%
+	background-color: $colorBG
+	form.login
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		
+		width: 95%
+		h5
+			color: $corPadrao
+			text-align: center
+			font-size: 36px
+			font-weight: normal
+		.line
+		
+			max-width: 680px
+			margin: 0 auto
+			margin-bottom: 50px
+			margin-top: 15px
+			width: 100%
+			height: 1px 
+			background-color: $corPadrao
+		.form-container
+			max-width: 400px
+			margin: 0 auto
+			width: 100%
+			input::placeholder
+				color: #babcbe
+			input[type=text],input[type=password]
+				width: 100%
+				padding: 15px 12px
+				border: 0.4px solid $corPadrao
+				background: rgba(0,0,0,0.1)
+				color: white
+				font-weight: bold
+				font-size: 16px
+			input[type=text]:focus,input[type=submit]:focus,input[type=password]:focus
+				outline: 0
+			input[type=submit]
+				width: 100%
+
+				padding: 18px 0
+				background-image: linear-gradient(#3e464f,#1f2429)
+				border: 0.4px solid $corPadrao 
+				color: white
+				font-weight: bold
+				cursor: pointer
+				font-size: 16px
+			input[type=submit]:hover
+				background-image: linear-gradient(#363d45,#1a1f24)
+				transition: 0.4s
+			input:-webkit-autofill 
+				-webkit-box-shadow: 0px 0px 0px 30px $colorBG inset
+				/* Cor do texto do autocomplete */
+			input:-webkit-autofill 
+				-webkit-text-fill-color: white !important
+
+			.container-checkbox
+				margin: 10px 0
+				margin-bottom: 30px
+				color: #948675
+				input 
+					position: absolute
+					z-index: -1
+					opacity: 0
+				input + label 
+					position: relative
+					cursor: pointer
+					padding-left: 25px
+					font-size: 14px
+					font-weight: bold
+				input[type=checkbox] + label::before 
+					content: ''
+					position: absolute
+					width: 15px
+					height: 15px
+					left: 0
+					bottom: 0
+					border: solid 2px #c9c9c9
+					border-radius: 5px
+					vertical-align: bottom
+				input[type=checkbox]:checked + label::after 
+					content: ''
+					position: absolute
+					left: 6px
+					bottom: 4px
+					width: 6px
+					height: 15px
+					border-right: solid 3px #c9c9c9
+					border-bottom: solid 3px #c9c9c9
+					transform: rotate(45deg)
+					font-weight: bold
+				input[type=checkbox]:checked + label
+					color: #c9c9c9
+
+				
+
+			.box-form
+				width: 100%
+				text-align: center
+				margin: 40px 0
+				li
+					list-style-type: none
+					a
+						font-weight: normal
+						color: #87888a
+						margin: 0 15px
+						text-decoration: none
+						font-size: 14px
+					a:hover
+						color: #a4a5a6
+						text-decoration: underline
+					
+				
+			
+			
+
+
+
+
+		
