@@ -28,6 +28,7 @@
 		</div><!--title-fixed-->
 		<form method="post">
 		<div class="conteudo-fixed" id="conteudo-fixed-1" >	
+			<div class="conteudo-fixed-wraper">
 				<div class="w15 left">
 					<div class="container-input left">
 						<label>IDPESSOA</label>
@@ -56,13 +57,13 @@
 				<div class="w20 left">
 					<div class="container-input left ">
 						<label>CEP</label>
-						<input name="cep" type="text" name="">
+						<input name="cep" type="text" id="cep">
 					</div><!--container-input-->
 				</div><!--boot w15-->
 				<div class="w30 left ">
 					<div class="container-input ">
 						<label>Endereço</label>
-						<input name="endereco" type="text" name="">
+						<input name="endereco" type="text" id="rua">
 					</div><!--container-input-->
 				</div><!--boot w30-->
 				<div class="w10 left">
@@ -74,7 +75,7 @@
 				<div class="w40 left">
 					<div class="container-input right ">
 						<label>Bairro</label>
-						<input name="bairro" type="text" name="">
+						<input name="bairro" type="text" id="bairro">
 					</div><!--container-input-->
 				</div><!--boot w40-->
 				<div class="clear"></div>
@@ -87,92 +88,198 @@
 				<div class="w33 left">
 					<div class="container-input  ">
 						<label>Cidade</label>
-						<input name="cidade" type="text" name="">
+						<input name="cidade" type="text" id="cidade">
 					</div><!--container-input-->
 				</div><!--boot w33-->
 				<div class="w33 left">
 					<div class="container-input right ">
 						<label>UF</label>
-						<input name="uf" type="text" name="">
+						<input name="uf" type="text" id="uf">
 					</div><!--container-input-->
 				</div><!--boot w33-->
-				<div class="clear"></div>		
+			</div><!--conteudo-fixed-wraper-->
+			<div class="clear"></div>		
 		</div><!--conteudo-fixed-->
-		<div class="conteudo-fixed" id="conteudo-fixed-2" style="display: none">	
-				<div class="w15 left">
-					<div class="container-input left">
-						<label>IDPESSOAs</label>
-						<input type="text" name="">
-					</div><!--container-input-->
-				</div><!--boot w25-->
-				<div class="w30 left ">
-					<div class="container-input ">
-						<label>Razão Social</label>
-						<input  type="text" name="">
-					</div><!--container-input-->
-				</div><!--boot w50-->
-				<div class="w30 left ">
-					<div class="container-input ">
-						<label>Nome Fantasia</label>
-						<input  type="text" name="">
-					</div><!--container-input-->
-				</div><!--boot w25-->
-				<div class="w25 left ">
-					<div class="container-input ">
-						<label>Cliente desde</label>
-						<input type="date" name="">
-					</div><!--container-input-->
-				</div><!--boot w25-->
-				<div class="clear"></div>
-				<div class="w20 left">
-					<div class="container-input left ">
-						<label>CEP</label>
-						<input type="text" name="">
-					</div><!--container-input-->
-				</div><!--boot w15-->
-				<div class="w30 left ">
-					<div class="container-input ">
-						<label>Endereço</label>
-						<input  type="text" name="">
-					</div><!--container-input-->
-				</div><!--boot w30-->
-				<div class="w10 left">
-					<div class="container-input ">
-						<label>Nº</label>
-						<input type="text" name="">
-					</div><!--container-input-->
-				</div><!--boot w10-->
-				<div class="w40 left">
+		<div class="conteudo-fixed" id="conteudo-fixed-2" >	
+			<div class="conteudo-fixed-wraper">
+				<div class="w25 left">
 					<div class="container-input right ">
-						<label>Bairro</label>
-						<input type="text" name="">
-					</div><!--container-input-->
-				</div><!--boot w40-->
-				<div class="clear"></div>
-				<div class="w33 left">
-					<div class="container-input left ">
-						<label>Complemento</label>
+						<label>Telefone 1</label>
 						<input type="text" name="">
 					</div><!--container-input-->
 				</div><!--boot w33-->
+				<div class="w25 left">
+					<div class="container-input right ">
+						<label>Telefone 2</label>
+						<input type="text" name="">
+					</div><!--container-input-->
+				</div><!--boot w33-->
+				<div class="w25 left">
+					<div class="container-input right ">
+						<label>Telefone 3</label>
+						<input type="text" name="">
+					</div><!--container-input-->
+				</div><!--boot w33-->
+				<div class="w25 left">
+					<div class="container-input right ">
+						<label>Telefone 4</label>
+						<input  type="text" name="">
+					</div><!--container-input-->
+				</div><!--boot w33-->
+				<div class="clear"></div>
+
+
+				<div class="box-select-fixed">
+					<div class="box-select-button">
+						<span btnAcao="PessoaFisica" class="button-select">Pessoa Fisica</span>
+						<span btnAcao="PessoaJuridica" >Pessoa Juridica</span>
+					</div><!--box-select-button-->
+					<div class="clear"></div>
+					<div class="box-select-1 box-selected-single" id="PessoaFisica">
+						<div class="w50 left">
+							<div class="container-input right w33 box-select-1">
+								<label>CPF</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+						<div class="w50 left">
+							<div class="container-input right w33 box-select-1">
+								<label>RG</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+					</div><!--box-select-1-->
+
+					<div class="box-select-2 box-selected-single" id="PessoaJuridica" >
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>CNPJ</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Insc.Estadual</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Suframa</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<select>
+									<option>Mei/Simples</option>
+									<option disabled>Lucro Presumido/Lucro Real</option>
+								</select>
+							</div><!--container-input-->
+						</div><!--boot w33-->
+					</div><!--box-select-2-->
+					<div class="clear"></div>		
+				</div><!--box-select-fixed-->
 				<div class="w33 left">
-					<div class="container-input  ">
-						<label>Cidade</label>
+					<div class="container-input right ">
+						<label>E-mail Principal</label>
+						<input  type="text" name="">
+					</div><!--container-input-->
+				</div><!--boot w33-->
+				<div class="w33 left">
+					<div class="container-input right ">
+						<label>Site</label>
 						<input type="text" name="">
 					</div><!--container-input-->
 				</div><!--boot w33-->
 				<div class="w33 left">
 					<div class="container-input right ">
-						<label>UF</label>
-						<input type="text" name="">
+						<label>Grupo</label>
+						<input  type="text" name="">
 					</div><!--container-input-->
 				</div><!--boot w33-->
-				<div class="clear"></div>		
+				<div class="clear"></div>
+				<div class="box-select-fixed">
+					<div class="box-select-button">
+						<span btnAcao="Relacionamento" class="button-select">Relacionamento</span>
+						<span btnAcao="Venda_Compra">Venda/Compra</span>
+						<span btnAcao="Financeiro">Financeiro</span>
+						<span btnAcao="Observacao">Observação</span>
+
+
+					</div><!--box-select-button-->
+					<div class="clear"></div>
+					<div class="box-select-1 box-selected-single" id="Relacionamento">
+						<div class="container-checkbox">
+							<input id="cliente" type="checkbox" name="lembrar">
+							<label for="cliente">Cliente</label>
+							<input id="fornecedor" type="checkbox" name="lembrar">
+							<label for="fornecedor">Fornecedor</label>
+							<input id="funcionario" type="checkbox" name="lembrar">
+							<label for="funcionario">Funcionario</label>
+							<input id="colaborador" type="checkbox" name="lembrar">
+							<label for="colaborador">Colaborador</label>
+							<input id="transportadora" type="checkbox" name="lembrar">
+							<label for="transportadora">Transportadora</label>
+							<input id="tecnico" type="checkbox" name="lembrar">
+							<label for="tecnico">Técnico</label>
+							<input id="vendedor" type="checkbox" name="lembrar">
+							<label for="vendedor">Vendedor</label>
+							<input id="representante" type="checkbox" name="lembrar">
+							<label for="representante">Representante</label>
+						</div><!--container-checkbox-->
+					</div><!--box-select-1-->
+
+					<div class="box-select-2 box-selected-single" id="Venda_Compra" >
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Option1 venda</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Option2 venda</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+					</div><!--box-select-2-->
+					<div class="box-select-2 box-selected-single" id="Financeiro" >
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Option1 Financeiro</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Option2 Financeiro</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+					</div><!--box-select-2-->
+					<div class="box-select-2 box-selected-single" id="Observacao" >
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Option1 Observacao</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+						<div class="w25 left">
+							<div class="container-input right box-select-1">
+								<label>Option2 observacao</label>
+								<input type="text" name="">
+							</div><!--container-input-->
+						</div><!--boot w33-->
+					</div><!--box-select-2-->
+					<div class="clear"></div>		
+				</div><!--box-select-fixed-->
+			</div><!--conteudo-fixed-wreaper-->
+			<div class="clear"></div>
+
 		</div><!--conteudo-fixed2-->
 		<div class="footer-fixed">
-			<div class="footer-button-fixed" >
-				<i for = "salvar" class="fas fa-check"> <input id="salvar" id="salvar" type="submit" name="salvar" value="Salvar"></i>		
-			</div><!--footer-button-fixed-->
+			
 			<div btnAcao="fecharFixed" class="footer-button-fixed" >
 				<i class="fas fa-times"> <span>Sair</span></i>
 			</div><!--footer-button-fixed-->
@@ -186,3 +293,4 @@
 <!--Script da Pagina "CONDICAO DE PAGAMENTO" -->
 <script src="js/botoes.js"></script><!--Botoes da Pagina -->
 <script src="js/validaCampo.js"></script><!--Scripts de Validação dos input do formulário -->
+<script src="js/cepAutomatico.js"></script><!--Scripts de Validação dos input do formulário -->

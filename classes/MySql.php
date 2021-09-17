@@ -14,7 +14,7 @@
 					self::$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 				} catch (Exception $e) {
 					// mostra o erro gerado na tela
-				 	 echo $e->getMessage();  //
+				 	// echo $e->getMessage();  //
 				 	echo '<h4> ERRO NO BANCO DE DADOS</h4>';
 				}
 			}

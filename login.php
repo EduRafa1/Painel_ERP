@@ -41,6 +41,7 @@
 						$value = $sql->fetch();
 						$_SESSION['email'] = $email;
 						$_SESSION['password'] = $password;
+						Painel::redirect(INCLUDE_PATH_PAINEL);
 						if (isset($_POST['lembrar'])) {
 							setcookie('lembrar',true,time()+(60*60*24),'/');
 							setcookie('email',$email,time()+(60*60*24),'/');
@@ -48,8 +49,10 @@
 						}
 						Painel::redirect(INCLUDE_PATH_PAINEL);
 					}else{
-						//Painel::alert('erro','E-mail ou senha está incorreto')
+						echo 'login ou senha incorreto';
+						//Painel::alert('erro','E-mail ou senha está incorreto');
 					}
+
 				}
 
 			 ?>

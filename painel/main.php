@@ -72,7 +72,7 @@
 				<div realtime="pessoas" class="box-menu">
 					<a><i title="Pessoas" class="fas fa-user"></i> Pessoas<a>
 				</div><!--box-menu-->
-				<div class="box-menu">
+				<div realtime="plano-de-conta" class="box-menu">
 					<a><i title="Plano de Conta" class="fas fa-chart-line"></i> Plano de Conta<a>
 				</div><!--box-menu-->
 				<div class="box-menu">
@@ -194,7 +194,7 @@
 			<!--Ideia futura-->
 		</div><!--main-topo-->
 		<div class="main-conteudo">
-			<?php include('pessoas.php') ?>
+			<?php include('plano-de-conta.php') ?>
 		</div><!--main-conteudo-->
 	</main>
 </body>

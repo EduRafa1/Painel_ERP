@@ -268,6 +268,7 @@ main
 						padding: 10px 45px
 						text-decoration: none
 						font-size: 15px
+						user-select: none
 						font-weight: bold
 				.options-box:nth-of-type(1)
 					margin-left: 0
@@ -304,6 +305,82 @@ main
 				padding: 20px 10px 20px 10px	
 				max-height: 350px
 				overflow-y: auto
+				overflow-x: hidden
+				width: 100%
+				.conteudo-fixed-wraper
+					max-width: 950px
+					min-width: 320px
+					width: 100%
+					height: 100%
+					.box-select-fixed
+						width: 100%
+						padding: 20px 0
+						margin-bottom: 8px 
+						border-bottom: 1px solid #ddd
+						.box-select-button
+							border-bottom: 1px solid #ddd
+							padding: 7px 0
+							span
+								padding: 8px 10px 
+								background-color: $corPreto
+								cursor: pointer
+								user-select: none
+							span.button-select
+								background-color: $corPadrao
+
+						.box-selected-single
+							padding: 10px 0
+							.container-checkbox
+								margin: 10px 0
+								margin-bottom: 30px
+								color: $corPreto
+								input 
+									position: absolute
+									z-index: -1
+									opacity: 0
+								input + label 
+									position: relative
+									cursor: pointer
+									padding-left: 25px
+									font-size: 14px
+									font-weight: bold
+									width: 50%
+									float: left
+									margin: 10px 0
+								input[type=checkbox] + label::before 
+									content: ''
+									position: absolute
+									width: 15px
+									height: 15px
+									left: 0
+									bottom: 0
+									border: solid 2px $corPreto
+									border-radius: 5px
+									vertical-align: bottom
+								input[type=checkbox]:checked + label::after 
+									content: ''
+									position: absolute
+									left: 6px
+									bottom: 4px
+									width: 6px
+									height: 15px
+									border-right: solid 3px $corPreto
+									border-bottom: solid 3px $corPreto
+									transform: rotate(45deg)
+									font-weight: bold
+								input[type=checkbox]:checked + label
+									color: $corPreto
+
+						#PessoaJuridica
+							display: none
+						#Venda_Compra
+							display: none
+						#Financeiro
+							display: none
+						#Observacao
+							display: none
+
+							
 				.container-input
 					width: 100%
 					padding: 0 5px
@@ -319,13 +396,20 @@ main
 						margin-top: 5px
 						width: 100%
 						padding: 5px 7px
-					input:focus
+					input:focus,select:focus
 						outline: 0
 					input[type=date]
 						border: 0
 						border-bottom: 1px solid $corPreto
 						margin-top: 0
 						border-right: 1px solid $corPreto
+					select
+						margin-top: 23px
+						border: 1px solid $corPreto
+						padding: 4px 7px
+						color: $corPadrao
+						option
+							color: $corPreto
 					button
 						width: 100%
 						margin-top: 22.5px
@@ -337,6 +421,14 @@ main
 						background-color: #121212
 						i
 							color: white
+					select.plano-de-conta
+						width: 100%
+						margin-top: 5px
+						border: 1px solid $corPreto
+						padding: 4px 7px
+						color: $corPadrao
+						option
+							color: $corPreto
 			.footer-fixed
 				width: 100%
 				background-color: $corPadrao
@@ -355,11 +447,14 @@ main
 						font-size: 15px
 						cursor: pointer
 						padding-left: 5px
+						user-select: none
 
 					span
 						font-weight: normal
 						margin-left: 5px 
-
+						user-select: none
+					i
+						user-select: none
 				.footer-button-fixed:hover
 					background-color: black
 
@@ -376,6 +471,10 @@ main
 	//Main Fixed 2 -- Box Grande fixa com muito conteudo-->
 	.box-fixed2
 		max-width: 980px !important
+		
+		#conteudo-fixed-2
+			width: 0
+			display: none
 		
 
 //Medias screen and
@@ -424,6 +523,9 @@ main
 	.w50
 		width: 100% !important
 		margin: 0 !important
+	select
+		width: 100% !important
+
 	.container-input
 		float: none !important
 		margin: 0 auto !important
@@ -449,8 +551,17 @@ main
 			font-size: 13px !important	
 		input[type=date]
 			border: 1px solid $corPreto !important	
+	.box-select-button
+		margin-bottom: 7px !important
+		span
+			width: 50% !important
+			float: left !important
+			border: 4px solid white
+
 
 @media screen and (max-width: 400px)
-	
+	.box-select-button
+		span
+			width: 100% !important
 	.footer-button-fixed
-		margin: 5px 0 !important
+		//margin: 5px 0 !important
