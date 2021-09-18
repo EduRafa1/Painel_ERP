@@ -10,7 +10,7 @@
 		<div class="clear"></div>
 	</div>
 	<div class="options">
-		<div btnAcao="funcao" class="options-box">
+		<div btnAcao="novo" class="options-box">
 			<a><i class="far fa-file"></i> Novo</a>
 		</div><!--option-box-->
 		<div class="options-box">
@@ -21,7 +21,7 @@
 		</div><!--option-box-->
 	</div><!--options-->
 </div><!--main-box-->
-<div class="main-fixed" id="funcao">
+<div class="main-fixed" id="novo">
 	<div class="box-fixed">
 		<div class="title-fixed">
 			<h2>Cadastro- de função</h2>

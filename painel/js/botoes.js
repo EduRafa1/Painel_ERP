@@ -11,25 +11,12 @@ $(function(){
     	$('.main-fixed').fadeOut();	
     }    
 });
-	//Abrir
-	$('[btnAcao=novoCondicaoPagamento]').click(function(){
-		$('#condicaoPagamento').fadeIn();
+	//Ação do botão que abre um novo Cadastro 
+	$('[btnAcao=novo]').click(function(){
+		$('#novo').fadeIn();
 	});
 
-	$('[btnAcao=novoFormaDePagamento]').click(function(){
-		$('#novoFormaDePagamento').fadeIn();
-	});
 
-	$('[btnAcao=funcao]').click(function(){
-		$('#funcao').fadeIn();
-	});
-	$('[btnAcao=pessoas]').click(function(){
-		$('#pessoas').fadeIn();
-	});
-	
-	$('[btnAcao=planoDeConta]').click(function(){
-		$('#planoDeConta').fadeIn();
-	});
 
 	//Acao de selecionar ´PESSOA´ fisica e juridica 
 	$('[btnAcao=PessoaFisica]').click(function(){

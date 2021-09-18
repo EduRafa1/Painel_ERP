@@ -38,6 +38,12 @@ html, body {
 .w75 {
   width: 75%; }
 
+.w70 {
+  width: 70%; }
+
+.w60 {
+  width: 60%; }
+
 .w50 {
   width: 50%; }
 
@@ -61,6 +67,9 @@ html, body {
 
 .w10 {
   width: 10%; }
+
+.w5 {
+  width: 5%; }
 
 .left {
   float: left; }
@@ -374,6 +383,10 @@ main {
               display: none; }
             main .main-fixed .box-fixed .conteudo-fixed .conteudo-fixed-wraper .box-select-fixed #Observacao {
               display: none; }
+        main .main-fixed .box-fixed .conteudo-fixed .container-input-espaco {
+          width: 50px;
+          text-align: left;
+          float: left; }
         main .main-fixed .box-fixed .conteudo-fixed .container-input {
           width: 100%;
           padding: 0 5px;
@@ -420,6 +433,8 @@ main {
             color: #23282d; }
             main .main-fixed .box-fixed .conteudo-fixed .container-input select.plano-de-conta option {
               color: #666; }
+          main .main-fixed .box-fixed .conteudo-fixed .container-input p.espaco {
+            margin-top: 18px; }
       main .main-fixed .box-fixed .footer-fixed {
         width: 100%;
         background-color: #23282d;
@@ -474,23 +489,7 @@ main {
       width: 100% !important;
       padding: 15px 0 !important; } }
 @media screen and (max-width: 600px) {
-  .w15 {
-    width: 100% !important;
-    margin: 0 !important; }
-
-  .w20 {
-    width: 100% !important;
-    margin: 0 !important; }
-
-  .w30 {
-    width: 100% !important;
-    margin: 0 !important; }
-
-  .w33 {
-    width: 100% !important;
-    margin: 0 !important; }
-
-  .w40 {
+  .w90 {
     width: 100% !important;
     margin: 0 !important; }
 
@@ -498,15 +497,11 @@ main {
     width: 100% !important;
     margin: 0 !important; }
 
-  .w10 {
+  .w70 {
     width: 100% !important;
     margin: 0 !important; }
 
-  .w25 {
-    width: 100% !important;
-    margin: 0 !important; }
-
-  .w90 {
+  .w60 {
     width: 100% !important;
     margin: 0 !important; }
 
@@ -514,8 +509,46 @@ main {
     width: 100% !important;
     margin: 0 !important; }
 
+  .w40 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w33 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w30 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w25 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w20 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w15 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w10 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  .w5 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+  p.espaco {
+    margin-top: 0 !important; }
+
   select {
     width: 100% !important; }
+
+  .container-input-espaco {
+    width: 100px !important; }
 
   .container-input {
     float: none !important;

@@ -10,7 +10,7 @@
 		<div class="clear"></div>
 	</div>
 	<div class="options">
-		<div btnAcao="planoDeConta" class="options-box">
+		<div btnAcao="novo" class="options-box">
 			<a><i class="far fa-file"></i> Novo</a>
 		</div><!--option-box-->
 		<div class="options-box">
@@ -21,7 +21,7 @@
 		</div><!--option-box-->
 	</div><!--options-->
 </div><!--main-box-->
-<div class="main-fixed" id="planoDeConta">
+<div class="main-fixed" id="novo">
 	<div class="box-fixed">
 		<div class="title-fixed">
 			<h2>Insira o plano de conta</h2>

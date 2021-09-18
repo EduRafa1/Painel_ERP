@@ -1,6 +1,6 @@
 
 <div class="main-title">
-		<h1><i title="Pessoas" class="fas fa-user"></i> Cadastro de Pessoas</h1>
+		<h1><i title="Produto" class="fas fa-box"></i> Cadastro de Produtos</h1>
 </div>
 <div class="main-box">
 	<span>Consultar:</span>
@@ -21,32 +21,40 @@
 		</div><!--option-box-->
 	</div><!--options-->
 </div><!--main-box-->
+
 <div class="main-fixed" id="novo">
 	<div class="box-fixed2 box-fixed">
 		<div class="title-fixed">
-			<h2>Inserindo nova Pessoa</h2>
+			<h2>Novo Produto</h2>
 		</div><!--title-fixed-->
 		<form method="post">
 		<div class="conteudo-fixed" id="conteudo-fixed-1" >	
 			<div class="conteudo-fixed-wraper">
 				<div class="w15 left">
 					<div class="container-input left">
-						<label>IDPESSOA</label>
+						<label>IDPRODUTO</label>
 						<input name="id" type="text" name="">
 					</div><!--container-input-->
-				</div><!--boot w25-->
-				<div class="w30 left ">
+				</div><!--boot w15-->
+				<div class="w60 left ">
 					<div class="container-input ">
-						<label>Razão Social</label>
+						<label>Descrição</label>
 						<input name="razao_social" type="text" name="">
 					</div><!--container-input-->
-				</div><!--boot w50-->
-				<div class="w30 left ">
-					<div class="container-input ">
-						<label>Nome Fantasia</label>
-						<input name="nome_fantasia" type="text" name="">
+				</div><!--boot w70-->
+				<div class="w20 left ">
+					<div class="container-input w70 ">
+						<label>Unidade</label>
+						<input  type="text" name="">
 					</div><!--container-input-->
-				</div><!--boot w25-->
+				</div><!--boot w15-->
+				<div class="w5 left ">
+					<div class="container-input container-input-espaco" >
+						<p class="espaco"></p>
+						<input type="button" name="" value="+">
+					</div><!--container-input-->
+				</div><!--boot w15-->
+
 				<div class="w25 left ">
 					<div class="container-input ">
 						<label>Cliente desde</label>
