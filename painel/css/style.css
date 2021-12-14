@@ -82,6 +82,15 @@ html, body {
   margin: 0 auto;
   padding: 0 2%; }
 
+.selected {
+  background-color: #454545 !important; }
+
+.selected a {
+  color: white !important; }
+
+.selected i {
+  color: white !important; }
+
 header {
   position: fixed;
   z-index: 3;

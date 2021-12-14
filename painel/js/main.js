@@ -7,6 +7,7 @@ $(function(){
 	
 	verificatela();
 	//Abrir submenu Lateral
+
 	$('#painel').click(function(){
 		$('.submenu-painel').slideToggle();
 	});

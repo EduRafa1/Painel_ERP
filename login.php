@@ -1,4 +1,5 @@
 <?php 
+
 	if (isset($_COOKIE['lembrar'])) {
 		$email = $_COOKIE['email'];
 		$password = $_COOKIE['password'];
@@ -26,18 +27,21 @@
 	<title>|| ERP ||</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= INCLUDE_PATH?>css/style.min.css">
 </head>
 <body class="w100">
 	<main class="w100">
 		<form class="login" method="post" class="w50" autocomplete="off">
 			<?php 
 				if (isset($_POST['acao'])) {
-					$email = $_POST['email'];
-					$password = $_POST['password'];
-					$sql = Login::verifyLogin('usuarios','email',$email,'password',$password);
+					//$email = $_POST['email'];
+					//$password = $_POST['password'];
+					//$sql = Login::verifyLogin('usuarios','email',$email,'password',$password);
+					$_SESSION['logado'] = true;
+					Painel::redirect(INCLUDE_PATH_PAINEL);
+					/*
 					if ($sql->rowCount() == 1) {
-						$_SESSION['logado'] = true;
+				
 						$value = $sql->fetch();
 						$_SESSION['email'] = $email;
 						$_SESSION['password'] = $password;
@@ -52,7 +56,7 @@
 						echo 'login ou senha incorreto';
 						//Painel::alert('erro','E-mail ou senha está incorreto');
 					}
-
+				*/
 				}
 
 			 ?>
